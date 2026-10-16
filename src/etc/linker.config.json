@@ -1,0 +1,9 @@
+{
+	"provideLibs": [	
+		    "libdummy_gbm_gralloc_dev-x86_64-v2.so",
+		    "libdummy_gbm_gralloc_dev.so",
+		    "libdummy_headers_gbm_gralloc-x86_64-v2.so",
+		    "libdummy_headers_gbm_gralloc.so"
+	],
+	"visible": true
+}

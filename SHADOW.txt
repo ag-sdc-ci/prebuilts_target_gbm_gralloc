@@ -1,0 +1,6 @@
+shadow prebuilt repo: gbm_gralloc (target)
+  upstream: external/gbm_gralloc
+  api-level: 34 (branch 34-20261016)
+  blobs: org.blisslabs.ag.gbm_gralloc-14000008.apex org.blisslabs.ag.gbm_gralloc.dev-14000008.apex
+  src: extracted payload + regenerated root Android.bp (gen_extractive_bp.py)
+  date: 2026-10-16
