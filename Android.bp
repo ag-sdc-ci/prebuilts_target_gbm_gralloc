@@ -30,8 +30,8 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "src/include",
-        "src/include/android",
+        "include",
+        "include/android",
     ],
     min_sdk_version: "29",
 }
@@ -47,8 +47,8 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "src/include",
-        "src/include/android",
+        "include",
+        "include/android",
     ],
     min_sdk_version: "29",
 }
@@ -61,7 +61,7 @@ cc_prebuilt_library_shared {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "src/include",
+        "include",
     ],
     relative_install_path: "hw",
     prefer: true,
@@ -70,7 +70,7 @@ cc_prebuilt_library_shared {
         "//apex_available:platform",
     ],
     min_sdk_version: "29",
-    srcs: ["src/lib/hw/gralloc.gbm.so"],
+    srcs: ["lib64/hw/gralloc.gbm.so"],
 }
 
 cc_prebuilt_library_shared {
@@ -81,7 +81,7 @@ cc_prebuilt_library_shared {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "src/include",
+        "include",
     ],
     relative_install_path: "hw",
     prefer: true,
@@ -90,7 +90,7 @@ cc_prebuilt_library_shared {
         "//apex_available:platform",
     ],
     min_sdk_version: "29",
-    srcs: ["src/lib/hw/gralloc.gbm_hack.so"],
+    srcs: ["lib64/hw/gralloc.gbm_hack.so"],
 }
 
 cc_prebuilt_library_shared {
@@ -101,7 +101,7 @@ cc_prebuilt_library_shared {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "src/include",
+        "include",
     ],
     relative_install_path: "hw",
     prefer: true,
@@ -110,7 +110,7 @@ cc_prebuilt_library_shared {
         "//apex_available:platform",
     ],
     min_sdk_version: "29",
-    srcs: ["src/lib/hw/gralloc.gbm_noscanout.so"],
+    srcs: ["lib64/hw/gralloc.gbm_noscanout.so"],
 }
 
 cc_prebuilt_library_shared {
@@ -121,7 +121,7 @@ cc_prebuilt_library_shared {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "src/include",
+        "include",
     ],
     prefer: true,
     apex_available: [
@@ -129,7 +129,7 @@ cc_prebuilt_library_shared {
         "//apex_available:platform",
     ],
     min_sdk_version: "29",
-    srcs: ["src/lib/libgralloc.gbm.so"],
+    srcs: ["lib64/libgralloc.gbm.so"],
 }
 
 cc_prebuilt_library_shared {
@@ -140,7 +140,7 @@ cc_prebuilt_library_shared {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "src/include",
+        "include",
     ],
     prefer: true,
     apex_available: [
@@ -148,7 +148,7 @@ cc_prebuilt_library_shared {
         "//apex_available:platform",
     ],
     min_sdk_version: "29",
-    srcs: ["src/lib/libgralloc.gbm_hack.so"],
+    srcs: ["lib64/libgralloc.gbm_hack.so"],
 }
 
 cc_prebuilt_library_shared {
@@ -159,7 +159,7 @@ cc_prebuilt_library_shared {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "src/include",
+        "include",
     ],
     prefer: true,
     apex_available: [
@@ -167,7 +167,7 @@ cc_prebuilt_library_shared {
         "//apex_available:platform",
     ],
     min_sdk_version: "29",
-    srcs: ["src/lib/libgralloc.gbm_noscanout.so"],
+    srcs: ["lib64/libgralloc.gbm_noscanout.so"],
 }
 
 cc_prebuilt_binary {
@@ -175,5 +175,5 @@ cc_prebuilt_binary {
     vendor_available: true,
     check_elf_files: false,
     prefer: true,
-    srcs: ["src/bin/gralloctest"],
+    srcs: ["bin/gralloctest"],
 }
